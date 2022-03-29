@@ -2,7 +2,6 @@ const path = require("path");
 
 module.exports = {
   stories: ["../src/**/*.stories.tsx"],
-  staticDirs: ["../public"],
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
@@ -23,18 +22,15 @@ module.exports = {
       include: path.resolve(__dirname, "../"),
     });
 
-    config.resolve.alias = {
-      ...config.resolve?.alias,
-      "@settle-ui": [
-        path.resolve(__dirname, "../src/"),
-        path.resolve(__dirname, "../"),
-      ],
-    };
+    // config.resolve.alias = {
+    //   ...config.resolve?.alias,
+    //   "@settle-ui/*": path.resolve(__dirname, "../src/"),
+    // };
 
-    config.resolve.roots = [
-      path.resolve(__dirname, "../public"),
-      "node_modules",
-    ];
+    // config.resolve.roots = [
+    //   path.resolve(__dirname, "../public"),
+    //   "node_modules",
+    // ];
 
     return config;
   },

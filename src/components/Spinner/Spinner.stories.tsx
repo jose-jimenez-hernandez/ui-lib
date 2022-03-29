@@ -9,7 +9,7 @@ export default {
   argTypes: {
     color: { control: 'select', options: ['primary-500', 'red-500', 'black', 'white-500'] },
   },
-} as Meta;
+};
 
 // Create a master template for mapping args to render the Button component
 const TemplateButton: Story = (args) => <Spinner {...args} />;

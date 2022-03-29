@@ -10,7 +10,7 @@ export default {
     color: { control: 'select', options: ['primary', 'red', 'black', 'white'] },
     shape: { control: 'select', options: ['contained', 'outlined', 'text'] },
   },
-} as Meta;
+};
 
 // Create a master template for mapping args to render the Button component
 const TemplateButton: Story = (args) => <Button {...args} />;

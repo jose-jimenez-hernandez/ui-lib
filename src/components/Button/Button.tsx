@@ -1,14 +1,14 @@
-import { Spinner } from "@settle-ui/components/Spinner";
-import { ButtonProps } from "./ButtonType";
-import useStyles from "./styles";
+import { Spinner } from '../Spinner';
+import { ButtonProps } from './ButtonType';
+import useStyles from './styles';
 
 const Button = ({
   children,
-  className = "",
+  className = '',
   color,
   disabled = false,
   loading = false,
-  name = "",
+  name = '',
   shape,
   size,
   textColor,
@@ -24,13 +24,7 @@ const Button = ({
   });
 
   return (
-    <button
-      id={name}
-      name={name}
-      {...attrs}
-      className={styles.button}
-      disabled={disabled}
-    >
+    <button id={name} name={name} {...attrs} className={styles.button} disabled={disabled}>
       {!disabled && loading && <Spinner color={styles.spinner} />}
       {children}
     </button>
