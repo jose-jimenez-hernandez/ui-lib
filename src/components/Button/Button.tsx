@@ -3,7 +3,7 @@ import { ButtonProps } from './ButtonType';
 import useStyles from './styles';
 
 const Button = ({
-  children,
+  text,
   className = '',
   color,
   disabled = false,
@@ -26,7 +26,7 @@ const Button = ({
   return (
     <button id={name} name={name} {...attrs} className={styles.button} disabled={disabled}>
       {!disabled && loading && <Spinner color={styles.spinner} />}
-      {children}
+      {text}
     </button>
   );
 };

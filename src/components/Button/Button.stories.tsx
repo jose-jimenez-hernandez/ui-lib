@@ -16,7 +16,7 @@ export default {
 const TemplateButton: Story = (args) => <Button {...args} />;
 
 export const DefaultButton = TemplateButton.bind({});
-DefaultButton.args = { children: 'Settle Default Button' };
+DefaultButton.args = { text: 'Settle Default Button' };
 
 export const DisabledButton = TemplateButton.bind({});
-DisabledButton.args = { disabled: true, children: 'Settle Disabled Button', color: 'primary' };
+DisabledButton.args = { disabled: true, text: 'Settle Disabled Button', color: 'primary' };
