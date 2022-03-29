@@ -1,4 +1,4 @@
-import { Spinner } from '../Spinner';
+import { Spinner } from '@settle-ui/components/Spinner';
 import { ButtonProps } from './ButtonType';
 import useStyles from './styles';
 

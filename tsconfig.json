@@ -19,7 +19,7 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@settle-ui/*": ["/src/*"]
+      "@settle-ui/*": ["./src/*"]
     }
   },
   "include": ["/src"],

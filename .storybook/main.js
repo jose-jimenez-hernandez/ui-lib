@@ -22,10 +22,10 @@ module.exports = {
       include: path.resolve(__dirname, "../"),
     });
 
-    // config.resolve.alias = {
-    //   ...config.resolve?.alias,
-    //   "@settle-ui/*": path.resolve(__dirname, "../src/"),
-    // };
+    config.resolve.alias = {
+      ...config.resolve?.alias,
+      "@settle-ui": path.resolve(__dirname, "../src/"),
+    };
 
     // config.resolve.roots = [
     //   path.resolve(__dirname, "../public"),
