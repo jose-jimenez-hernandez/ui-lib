@@ -1,5 +1,6 @@
 import { Spinner } from '@settle-ui/components/Spinner';
-import { ButtonProps } from './ButtonType';
+import { SIZE } from '@settle-ui/core/enums/SizeEnum';
+import { ButtonProps, ButtonVariantType } from './ButtonType';
 import useStyles from './styles';
 
 const Button = ({
@@ -9,18 +10,18 @@ const Button = ({
   disabled = false,
   loading = false,
   name = '',
-  shape,
-  size,
+  size = SIZE.BASE,
+  variant = ButtonVariantType.TERTIARY,
   textColor,
   ...attrs
 }: Partial<ButtonProps>) => {
   const styles = useStyles({
-    shape,
     color,
     size,
     textColor,
     disabled,
     className,
+    variant,
   });
 
   return (

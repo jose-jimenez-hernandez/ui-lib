@@ -7,8 +7,8 @@ export default {
   title: 'Components/Button',
   component: Button,
   argTypes: {
-    color: { control: 'select', options: ['primary', 'red', 'black', 'white'] },
-    shape: { control: 'select', options: ['contained', 'outlined', 'text'] },
+    variant: { control: 'select', options: ['primary', 'secondary', 'tertiary', 'link'] },
+    size: { control: 'select', options: ['xs', 'sm', 'base', 'l', 'xl'] },
   },
 };
 

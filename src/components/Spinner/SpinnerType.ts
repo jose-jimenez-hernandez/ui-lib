@@ -1,6 +1,4 @@
-type SpinnerType = {
+export type SpinnerType = {
   className: string;
   color: string;
 };
-
-export default SpinnerType;

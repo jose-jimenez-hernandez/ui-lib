@@ -1,30 +1,29 @@
 import classNames from 'classnames';
 import { ButtonProps } from '../ButtonType';
 
-export default ({ textColor, color = 'gray', disabled, size }: Partial<ButtonProps>) => {
-  color = color === 'white' ? 'black' : color;
-  // const container = classNames(`inline-flex items-center justify-center select-none py-2 px-6`);
-  const container = classNames(`inline-flex items-center justify-center py-2 px-2 select-none rounded-md`);
-
+export default ({ color, disabled, size }: Partial<ButtonProps>) => {
   const border = classNames('border border-transparent');
 
   const text = classNames('font-semibold text-sm', {
-    [`text-${color}-500`]: !textColor && !disabled,
-    'text-gray-300': disabled,
-    [`${textColor}`]: textColor && !disabled,
+    'text-primary-300': disabled,
+    [`text-primary-500`]: !color && !disabled,
+    [`text-${color}`]: color && !disabled,
   });
 
-  const background = classNames('transition-colors bg-transparent', {
-    [`hover:bg-${color}-400 hover:text-white-100  focus:ring-${color}`]: !disabled,
-    [`cursor-default pointer-events-none`]: disabled,
-  });
+  const background = classNames(
+    'transition-colors bg-transparent outline outline-offset-2 shadow-none cursor-pointer ',
+    {
+      [`cursor-default pointer-events-none`]: disabled,
+      [`focus:outline-${color}-50`]: !disabled && color,
+      [`focus:outline-primary-200`]: !disabled && !color,
+    }
+  );
 
   const spinner = classNames('currentColor');
 
   return {
     background,
     border,
-    container,
     text,
     spinner,
   };
