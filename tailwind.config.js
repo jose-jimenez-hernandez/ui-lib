@@ -5,11 +5,12 @@ module.exports = {
   purge: ['./src/**/*.tsx'],
   darkMode: false, // or 'media' or 'class'
   corePlugins: {
-    preflight: false,
+    preflight: true,
   },
   theme: {
     fontFamily: {
-      display: ['Montserrat', ...defaultTheme.fontFamily.sans],
+      default: [...defaultTheme.fontFamily.sans],
+      display: ['Nunito', ...defaultTheme.fontFamily.sans],
       body: ['Open Sans', ...defaultTheme.fontFamily.sans],
     },
     extend: {
@@ -33,5 +34,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [], 
 };

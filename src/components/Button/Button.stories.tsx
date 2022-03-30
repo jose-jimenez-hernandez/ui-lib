@@ -2,6 +2,7 @@ import React from 'react';
 import { Meta } from '@storybook/react/types-6-0';
 import { Story } from '@storybook/react';
 import Button from './Button';
+import { ButtonVariantType } from './ButtonType';
 
 export default {
   title: 'Components/Button',
@@ -13,7 +14,16 @@ export default {
 };
 
 // Create a master template for mapping args to render the Button component
-const TemplateButton: Story = (args) => <Button {...args} />;
+const TemplateButton: Story = (args) => (
+  <>
+    <div className="mt-2 flex justify-between w-full">
+      <Button text=" Settle primary button" {...args} variant={ButtonVariantType.PRIMARY} />
+      <Button text=" Settle secondary button" {...args} variant={ButtonVariantType.SECONDARY} />
+      <Button text=" Settle tertiary button" {...args} variant={ButtonVariantType.TERTIARY} />
+      <Button text=" Settle link button" {...args} variant={ButtonVariantType.LINK} />
+    </div>
+  </>
+);
 
 export const DefaultButton = TemplateButton.bind({});
 DefaultButton.args = { text: 'Settle Default Button' };

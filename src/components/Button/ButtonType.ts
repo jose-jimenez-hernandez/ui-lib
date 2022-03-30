@@ -1,4 +1,5 @@
 import { ButtonHTMLAttributes } from 'react';
+import { SIZE } from '@settle-ui/core/enums/SizeEnum';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className: string;
@@ -8,7 +9,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   loading: boolean;
   name: string;
   variant: ButtonVariantType;
-  size: string;
+  size: SIZE;
   textColor: string;
 }
 

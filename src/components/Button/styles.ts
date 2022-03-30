@@ -19,7 +19,7 @@ const createThemeFactory = ({ variant, ...props }: Partial<ButtonProps>) => {
   }
 };
 
-const getSize = (size: SIZE) => {
+const getContainerSize = (size: SIZE) => {
   return classNames('inline-flex items-center justify-center shadow-sm font-semibold select-none', {
     'rounded-md py-1.5 px-2.5 text-xs': SIZE.XS === size,
     'rounded-lg py-2.5 px-3 text-xs': SIZE.SM === size,
@@ -30,7 +30,7 @@ const getSize = (size: SIZE) => {
 };
 
 const useStyles = ({ className, ...props }: Partial<ButtonProps>) => {
-  const container = getSize(props.size);
+  const container = getContainerSize(props.size);
   const { border, text, background, spinner } = createThemeFactory(props);
 
   return { button: classNames(container, border, text, background, className), spinner };
