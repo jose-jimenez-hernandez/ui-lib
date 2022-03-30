@@ -8,7 +8,7 @@
   "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "ttps://github.com/settletech/settle-ui-library"
+    "url": "https://github.com/jose-jimenez-hernandez/ui-lib"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
@@ -25,6 +25,7 @@
     "@types/react": "^17.0.11",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
     "@typescript-eslint/parser": "^5.17.0",
+    "auto": "^10.36.5",
     "autoprefixer": "^9",
     "babel-loader": "^8.2.2",
     "eslint": "^8.12.0",
