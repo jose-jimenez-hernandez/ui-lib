@@ -1,11 +1,11 @@
 {
   "name": "testing-settle-ui-library",
-  "version": "1.0.4--canary.994d07f.0",
+  "version": "1.0.4--canary.2f93f0c.0",
   "description": "Settle React Components Library",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "license": "MIT",
-  "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/jose-jimenez-hernandez/ui-lib"
@@ -63,7 +63,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "release": "auto shipit --base-branch=master",
-    "build": "cross-env BABEL_ENV=production babel --extensions .ts,.tsx src -d dist --source-maps"
+    "build": "cross-env BABEL_ENV=production babel --extensions .ts,.tsx src -d lib --source-maps"
   },
   "babel": {
     "presets": [
