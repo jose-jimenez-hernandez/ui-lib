@@ -11,7 +11,7 @@ export default ({ textColor, disabled, size }: Partial<ButtonProps>) => {
   });
 
   const background = classNames(
-    'transition-colors bg-transparent outline outline-offset-2 shadow-none cursor-pointer ',
+    'transition-colors bg-transparent shadow-none cursor-pointer focus:outline focus:outline-offset-2 ',
     {
       [`cursor-default pointer-events-none`]: disabled,
       [`focus:outline-${textColor}`]: !disabled && textColor,

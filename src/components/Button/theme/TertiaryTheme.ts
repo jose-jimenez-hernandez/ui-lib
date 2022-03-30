@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { ButtonProps } from '../ButtonType';
 
-export default ({ textColor, color, disabled, size }: Partial<ButtonProps>) => {
+export default ({ textColor, color, disabled }: Partial<ButtonProps>) => {
   const border = classNames('border border-solid border-tertiary-200');
 
   const text = classNames('text-sm', {
@@ -10,7 +10,7 @@ export default ({ textColor, color, disabled, size }: Partial<ButtonProps>) => {
     'text-gray-200 dark:text-gray-400': disabled,
   });
 
-  const background = classNames('transition-colors outline outline-offset-2', {
+  const background = classNames('transition-colors focus:outline focus:outline-offset-2 ', {
     [`bg-gray-100 dark:bg-gray-700 cursor-default pointer-events-none`]: disabled,
     [`bg-${color}-200 hover:bg-${color}-50`]: !disabled && color,
     [`bg-white hover:bg-tertiary-50`]: !disabled && !color,

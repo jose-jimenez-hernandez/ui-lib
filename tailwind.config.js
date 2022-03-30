@@ -2,11 +2,8 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 const colors = require('./config/colors.js').colors;
 
 module.exports = {
-  purge: ['./src/**/*.tsx'],
-  darkMode: false, // or 'media' or 'class'
-  corePlugins: {
-    preflight: true,
-  },
+  content: ['./src/components/**/*.ts', './src/components/**/*.tsx'],
+  darkMode: 'class',
   theme: {
     fontFamily: {
       default: [...defaultTheme.fontFamily.sans],
@@ -31,8 +28,5 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [], 
+  plugins: [],
 };
