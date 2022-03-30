@@ -1,5 +1,5 @@
 {
-  "name": "settle-ui-library",
+  "name": "testing-settle-ui-library",
   "version": "1.0.0",
   "description": "Settle React Components Library",
   "main": "lib/index.js",
@@ -60,6 +60,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
+    "release": "auto shipit --base-branch=master",
     "build": "rollup -c"
   }
 }
