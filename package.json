@@ -1,11 +1,11 @@
 {
   "name": "testing-settle-ui-library",
-  "version": "1.0.3",
+  "version": "1.0.4--canary.cddac2b.0",
   "description": "Settle React Components Library",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "license": "MIT",
-  "module": "lib/index.esm.js",
-  "types": "lib/index.d.ts",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/jose-jimenez-hernandez/ui-lib"
