@@ -1,34 +1,20 @@
-const path = require("path");
-
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
-  staticDirs: ['../public'],
-  addons: ['@storybook/addon-links', '@storybook/addon-essentials', '@storybook/preset-create-react-app'],
-  webpackFinal: async (config) => {
-    config.module.rules.push({
-      test: /\,css&/,
-      use: [
-        {
-          loader: 'postcss-loader',
-          options: {
-            ident: 'postcss',
-            plugins: [require('tailwindcss'), require('autoprefixer')],
-          },
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
+    {
+      name: '@storybook/addon-postcss',
+      options: {
+        postcssLoaderOptions: {
+          implementation: require('postcss'),
         },
-      ],
-      include: path.resolve(__dirname, '../'),
-    });
-
-    config.resolve.alias = {
-      ...config.resolve?.alias,
-      '@settle-ui': path.resolve(__dirname, '../src/'),
-    };
-
-    // config.resolve.roots = [
-    //   path.resolve(__dirname, "../public"),
-    //   "node_modules",
-    // ];
-
-    return config;
+      },
+    },
+  ],
+  framework: '@storybook/react',
+  core: {
+    builder: 'webpack5',
   },
 };
