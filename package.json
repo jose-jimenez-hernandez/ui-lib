@@ -1,6 +1,6 @@
 {
   "name": "testing-settle-ui-library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Settle React Components Library",
   "main": "lib/index.js",
   "license": "MIT",
