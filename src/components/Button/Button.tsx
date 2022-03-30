@@ -4,8 +4,8 @@ import { ButtonProps, ButtonVariantType } from './ButtonType';
 import useStyles from './styles';
 
 const Button = ({
-  text,
   className = '',
+  text,
   color,
   disabled = false,
   loading = false,

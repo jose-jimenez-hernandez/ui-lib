@@ -12,8 +12,8 @@ export default ({ textColor, color, disabled, size }: Partial<ButtonProps>) => {
 
   const background = classNames('transition-colors outline outline-offset-2', {
     [`bg-gray-100 dark:bg-gray-700 cursor-default pointer-events-none`]: disabled,
-    [`bg-${color}-500 hover:bg-${color}-700`]: !disabled && color,
-    [`bg-primary-500 hover:bg-primary-700`]: !disabled && !color,
+    [`bg-${color}-500 dark:bg-${color}-400 hover:bg-${color}-700`]: !disabled && color,
+    [`bg-primary-500 dark:bg-primary-400 hover:bg-primary-700`]: !disabled && !color,
     [`focus:outline-${color}-500`]: !disabled && color,
     [`focus:outline-primary-500`]: !disabled && !color,
   });
