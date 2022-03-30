@@ -1,3 +1,3 @@
-import Button from "./components/Button";
-
-export { Button };
+export * from "./components/Button";
+export * from "./components/Spinner";
+export * from "./core/enums/SizeEnum";

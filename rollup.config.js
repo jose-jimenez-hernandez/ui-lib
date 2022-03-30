@@ -7,20 +7,21 @@ import postcss from "rollup-plugin-postcss";
 const packageJson = require("./package.json");
 
 export default {
-  input: "src/index.ts",
+  input: 'src/index.ts',
+  preserveModules: true,
   output: [
     {
-      file: packageJson.main,
-      format: "cjs",
+      dir: 'lib',
+      format: 'cjs',
       sourcemap: true,
     },
     {
-      file: packageJson.module,
-      format: "esm",
+      dir: 'lib',
+      format: 'esm',
       sourcemap: true,
     },
   ],
-  external: ["react", "react-dom"],
+  external: ['react', 'react-dom'],
   plugins: [
     peerDepsExternal(),
     resolve(),
@@ -28,12 +29,12 @@ export default {
     typescript({ useTsconfigDeclarationDir: true }),
     postcss({
       config: {
-        path: "./postcss.config.js",
+        path: './postcss.config.js',
       },
-      extensions: [".css"],
+      extensions: ['.css'],
       minimize: true,
       inject: {
-        insertAt: "top",
+        insertAt: 'top',
       },
     }),
   ],
