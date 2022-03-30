@@ -27,7 +27,7 @@ export default [
       peerDepsExternal(),
       resolve(),
       commonjs(),
-      typescript({ useTsconfigDeclarationDir: true, tsconfig: './tsconfig.json' }),
+      typescript({ tsconfig: './tsconfig.json' }),
       postcss({
         config: {
           path: './postcss.config.js',
@@ -39,6 +39,7 @@ export default [
         },
       }),
     ],
+    external: ['react', 'react-dom'],
   },
   {
     input: packageJson.main,
