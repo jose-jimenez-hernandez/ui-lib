@@ -1,6 +1,6 @@
 {
   "name": "testing-settle-ui-library",
-  "version": "1.0.4--canary.7646e33.0",
+  "version": "1.0.4--canary.34837a0.0",
   "description": "Settle React Components Library",
   "main": "lib/index.js",
   "license": "MIT",
