@@ -2,8 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 const colors = require('./config/colors.js').colors;
 
 module.exports = {
-  content: ['./src/components/**/*.{js,jsx,ts,tsx}'],
-  darkMode: 'class',
+  content: ['./src/**/*.{ts,tsx}'],
   theme: {
     fontFamily: {
       default: [...defaultTheme.fontFamily.sans],
@@ -11,7 +10,8 @@ module.exports = {
       body: ['Open Sans', ...defaultTheme.fontFamily.sans],
     },
     extend: {
-      colors: Object.assign(colors, {
+      colors: {
+        ...colors,
         primary: colors['deep-violet'],
         secondary: colors['dark-blue'],
         tertiary: colors.gray,
@@ -20,13 +20,14 @@ module.exports = {
         success: colors.green,
         info: colors['titan-white'],
         text: colors.gray,
-      }),
-      outline: {
-        primary: colors['deep-violet'],
-        secondary: colors['dark-blue'],
-        tertiary: colors.gray,
       },
     },
   },
+   safelist: [
+     {
+       pattern: /(bg|text|border|outline)-(red|green|blue)-(50|100|200|400|500|700)/,
+       variants: ['lg', 'hover', 'focus', 'lg:hover'],
+     },
+  ],
   plugins: [],
 };

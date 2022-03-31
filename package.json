@@ -24,7 +24,6 @@
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/builder-webpack5": "^6.4.19",
     "@storybook/manager-webpack5": "^6.4.19",
-    "@storybook/preset-create-react-app": "^3.1.6",
     "@storybook/react": "^6.4.19",
     "@storybook/testing-library": "^0.0.9",
     "@testing-library/jest-dom": "^5.11.4",
@@ -65,8 +64,7 @@
   },
   "dependencies": {
     "classnames": "^2.3.1",
-    "craco": "^0.0.3",
-    "react-scripts": "4.0.0"
+    "react-scripts": "^5.0.0"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
@@ -83,9 +81,6 @@
         }
       ]
     ]
-  },
-  "resolutions": {
-    "webpack": "5.52.1"
   },
   "publishConfig": {
     "access": "public",
