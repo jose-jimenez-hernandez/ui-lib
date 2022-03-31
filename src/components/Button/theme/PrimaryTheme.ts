@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { ButtonProps } from '../ButtonType';
 
-export default ({ textColor, color, disabled, size }: Partial<ButtonProps>) => {
+export default ({ textColor, color, disabled }: Partial<ButtonProps>) => {
   const border = classNames('border border-transparent');
 
   const text = classNames('text-sm', {

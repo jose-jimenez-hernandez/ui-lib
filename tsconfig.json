@@ -16,12 +16,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "baseUrl": ".",
-    "paths": {
-      "@settle-ui/*": ["./src/*"]
-    }
+    "jsx": "react-jsx"
   },
-  "include": ["./src/**/*.ts"],
-  "exclude": ["node_modules", "./lib"]
+  "include": ["src"],
+  "exclude": ["node_modules", "lib"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

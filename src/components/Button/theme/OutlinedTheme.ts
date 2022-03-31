@@ -1,9 +1,8 @@
 import classNames from 'classnames';
 import { ButtonProps } from '../ButtonType';
 
-export default ({ textColor, color = 'gray', disabled, size = 'md' }: Partial<ButtonProps>) => {
+export default ({ textColor, color = 'gray', disabled }: Partial<ButtonProps>) => {
   color = color === 'white' ? 'black' : color;
-  const container = classNames(`inline-flex items-center justify-center py-2 px-6 select-none`, `rounded-${size}`);
 
   const border = classNames('border', {
     [`border-${color}-200`]: !disabled,
@@ -27,7 +26,6 @@ export default ({ textColor, color = 'gray', disabled, size = 'md' }: Partial<Bu
   return {
     background,
     border,
-    container,
     text,
     spinner,
   };

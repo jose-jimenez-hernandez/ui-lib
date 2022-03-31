@@ -2,10 +2,7 @@ import classNames from 'classnames';
 import { ButtonProps } from '../ButtonType';
 
 export default ({ textColor, color, disabled }: Partial<ButtonProps>) => {
-  const border = classNames('border border-solid', {
-    ['border-tertiary-200']: !color,
-    [`border-${color}-200`]: color,
-  });
+  const border = classNames('border border-solid border-tertiary-200');
 
   const text = classNames('text-sm', {
     [`text-${textColor}`]: !disabled && textColor,
