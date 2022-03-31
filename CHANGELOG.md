@@ -13,6 +13,36 @@
 
 #### ⚠️ Pushed to `master`
 
+- add publish config (jose.jimenezhernandez@settlenetwork.com)
+- v1.0.5 (jose.jimenezhernandez@settlenetwork.com)
+- fix lib buider ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+- v1.0.4-6 ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+- rollup config ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+- v1.0.4-canary-2 ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+- Create push.yml ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+
+#### Authors: 2
+
+- [@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez)
+- Jose Jimenez (jose.jimenezhernandez@settlenetwork.com)
+
+---
+
+# (Thu Mar 31 2022)
+
+#### 🐛 Bug Fix
+
+- Testing/build [#8](https://github.com/jose-jimenez-hernandez/ui-lib/pull/8) ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+- Testing/build [#7](https://github.com/jose-jimenez-hernandez/ui-lib/pull/7) ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+- rollback builder to rollup [#6](https://github.com/jose-jimenez-hernandez/ui-lib/pull/6) ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+- Testing/build [#5](https://github.com/jose-jimenez-hernandez/ui-lib/pull/5) ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+- fix output directory [#4](https://github.com/jose-jimenez-hernandez/ui-lib/pull/4) ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+- add npmrc [#3](https://github.com/jose-jimenez-hernandez/ui-lib/pull/3) ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+- fix wron branch to release [#2](https://github.com/jose-jimenez-hernandez/ui-lib/pull/2) ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+- add babel builder [#1](https://github.com/jose-jimenez-hernandez/ui-lib/pull/1) ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+
+#### ⚠️ Pushed to `master`
+
 - v1.0.5 (jose.jimenezhernandez@settlenetwork.com)
 - fix lib buider ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
 - v1.0.4-6 ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
