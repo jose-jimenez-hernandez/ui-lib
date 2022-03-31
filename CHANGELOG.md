@@ -1,3 +1,15 @@
+# v1.0.9 (Thu Mar 31 2022)
+
+#### ⚠️ Pushed to `master`
+
+- v1.0.9 ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+
+#### Authors: 1
+
+- [@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez)
+
+---
+
 # v1.0.8 (Thu Mar 31 2022)
 
 #### ⚠️ Pushed to `master`
