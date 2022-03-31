@@ -1,3 +1,15 @@
+# v1.0.16 (Thu Mar 31 2022)
+
+#### ⚠️ Pushed to `master`
+
+- remove rollup ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+
+#### Authors: 1
+
+- [@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez)
+
+---
+
 # v1.0.13 (Thu Mar 31 2022)
 
 #### ⚠️ Pushed to `master`
