@@ -1,6 +1,6 @@
 export enum SIZE {
   BASE = 'base',
-  L = 'l',
+  LG = 'lg',
   SM = 'sm',
   XL = 'xl',
   XS = 'xs',

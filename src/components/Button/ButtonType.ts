@@ -1,23 +1,23 @@
-import { ButtonHTMLAttributes } from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 import { SIZE } from '../../core/enums/SizeEnum';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className: string;
-  text: string;
+  children: React.ReactNode;
   color: string;
   disabled: boolean;
   loading: boolean;
   name: string;
-  variant: ButtonVariantType;
   size: SIZE;
+  text: string;
   textColor: string;
+  variant: ButtonVariantType;
 }
 
-
 export enum ButtonVariantType {
-  PRIMARY="primary",
-  SECONDARY="secondary",
-  TERTIARY="tertiary",
-  LINK="link",
-  CUSTOM="custom",
+  PRIMARY = 'primary',
+  SECONDARY = 'secondary',
+  TERTIARY = 'tertiary',
+  LINK = 'link',
+  CUSTOM = 'custom',
 }

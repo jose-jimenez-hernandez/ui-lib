@@ -24,7 +24,7 @@ const getContainerSize = (size?: SIZE) => {
     'rounded-md py-1.5 px-2.5 text-xs': SIZE.XS === size,
     'rounded-lg py-2.5 px-3 text-xs': SIZE.SM === size,
     'rounded-xl py-3 px-4 text-sm': SIZE.BASE === size,
-    'rounded-xl py-3.5 px-4 text-base': SIZE.L === size,
+    'rounded-xl py-3.5 px-4 text-base': SIZE.LG === size,
     'rounded-xl py-4 px-6 text-base': SIZE.XL === size,
   });
 };

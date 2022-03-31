@@ -4,15 +4,17 @@ import { ButtonProps, ButtonVariantType } from './ButtonType';
 import useStyles from './styles';
 
 const Button = ({
+  children,
   className = '',
-  text,
   color,
   disabled = false,
   loading = false,
+  id = '',
   name = '',
   size = SIZE.BASE,
-  variant = ButtonVariantType.TERTIARY,
+  text,
   textColor,
+  variant = ButtonVariantType.TERTIARY,
   ...attrs
 }: Partial<ButtonProps>) => {
   const styles = useStyles({
@@ -25,9 +27,9 @@ const Button = ({
   });
 
   return (
-    <button id={name} name={name} {...attrs} className={styles.button} disabled={disabled}>
+    <button id={id || name} name={name} {...attrs} className={styles.button} disabled={disabled}>
       {!disabled && loading && <Spinner color={styles.spinner} />}
-      {text}
+      {children || text}
     </button>
   );
 };

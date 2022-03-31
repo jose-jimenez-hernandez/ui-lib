@@ -9,7 +9,7 @@ export default {
   component: Button,
   argTypes: {
     variant: { control: 'select', options: ['primary', 'secondary', 'tertiary', 'link'] },
-    size: { control: 'select', options: ['xs', 'sm', 'base', 'l', 'xl'] },
+    size: { control: 'select', options: ['xs', 'sm', 'base', 'lg', 'xl'] },
   },
 };
 
