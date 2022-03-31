@@ -77,8 +77,7 @@
     "release": "auto shipit --base-branch=master",
     "dev": "vite",
     "preview": "vite preview",
-    "build": "tsc && vite build",
-    "build:rollup": "rollup -c"
+    "build": "tsc && vite build"
   },
   "babel": {
     "presets": [
