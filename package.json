@@ -8,7 +8,7 @@
   "types": "lib/src/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/settletech/settle-ui-library"
+    "url": "https://github.com/jose-jimenez-hernandez/ui-lib"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
