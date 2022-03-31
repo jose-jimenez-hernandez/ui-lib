@@ -18,6 +18,22 @@
 
 #### ⚠️ Pushed to `master`
 
+- new version ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+- repo ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+- add vite configuration and structure ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+- remove craco ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+- add directories ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+
+#### Authors: 1
+
+- [@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez)
+
+---
+
+# v1.0.13 (Thu Mar 31 2022)
+
+#### ⚠️ Pushed to `master`
+
 - repo ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
 - add vite configuration and structure ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
 - remove craco ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
