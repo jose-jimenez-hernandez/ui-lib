@@ -1,3 +1,15 @@
+# v1.0.8 (Thu Mar 31 2022)
+
+#### ⚠️ Pushed to `master`
+
+- fix size L ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+
+#### Authors: 1
+
+- [@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez)
+
+---
+
 # (Thu Mar 31 2022)
 
 #### 🐛 Bug Fix
