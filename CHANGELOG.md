@@ -1,3 +1,16 @@
+# v1.0.11 (Thu Mar 31 2022)
+
+#### ⚠️ Pushed to `master`
+
+- remove bable build form package json ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+- remove stories-exmaples directory ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+
+#### Authors: 1
+
+- [@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez)
+
+---
+
 # v1.0.9 (Thu Mar 31 2022)
 
 #### ⚠️ Pushed to `master`
