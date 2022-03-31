@@ -72,8 +72,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "release": "auto shipit --base-branch=master",
-    "build": "rollup -c",
-    "build:babel": "cross-env BABEL_ENV=production babel --extensions .ts,.tsx src -d lib --source-maps"
+    "build": "rollup -c"
   },
   "babel": {
     "presets": [
