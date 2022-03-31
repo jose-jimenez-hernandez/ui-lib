@@ -1,6 +1,6 @@
 {
   "name": "settle-ui-library",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Settle React Components Library",
   "main": "lib/settle-ui.cjs.js",
   "license": "MIT",
