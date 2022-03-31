@@ -2,6 +2,22 @@
 
 #### ⚠️ Pushed to `master`
 
+- rename secret name (jose.jimenezhernandez@settlenetwork.com)
+- Update push.yml ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+- remove bable build form package json ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+- remove stories-exmaples directory ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
+
+#### Authors: 2
+
+- [@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez)
+- Jose Jimenez (jose.jimenezhernandez@settlenetwork.com)
+
+---
+
+# v1.0.11 (Thu Mar 31 2022)
+
+#### ⚠️ Pushed to `master`
+
 - remove bable build form package json ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
 - remove stories-exmaples directory ([@jose-jimenez-hernandez](https://github.com/jose-jimenez-hernandez))
 
