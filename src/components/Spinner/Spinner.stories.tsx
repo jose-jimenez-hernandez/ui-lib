@@ -12,8 +12,7 @@ export default {
 };
 
 // Create a master template for mapping args to render the Button component
-const TemplateButton: Story = (args) => <Spinner {...args} />;
+const TemplateSpinner: Story = (args) => <Spinner {...args} />;
 
-export const DefaultButton = TemplateButton.bind({});
+export const DefaultSpinner = TemplateSpinner.bind({});
 
-export const DisabledButton = TemplateButton.bind({});
