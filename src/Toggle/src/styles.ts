@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { SIZE } from '../../utils/types/SizeType';
+import { SIZE } from '@settle-ui/utils';
 import { ToggleProps } from './ToggleType';
 
 const useStyles = ({ className, size }: Partial<ToggleProps>) => ({

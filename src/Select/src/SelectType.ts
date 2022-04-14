@@ -1,4 +1,4 @@
-import { Status } from '../../utils/types/StatusType';
+import { Status } from '@settle-ui/utils';
 
 export interface SelectProps {
   disabled: boolean;

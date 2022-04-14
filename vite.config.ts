@@ -7,6 +7,11 @@ export function getBaseViteConfig(dirname: string, override?: UserConfigExport):
   const isExternal = (id: string) => !id.startsWith('.') && !path.isAbsolute(id);
 
   return {
+    resolve: {
+      alias: {
+        '@settle-ui/*': path.resolve(__dirname, './src/**/src/*'),
+      },
+    },
     esbuild: {
       jsxInject: "import React from 'react'",
     },
@@ -14,12 +19,11 @@ export function getBaseViteConfig(dirname: string, override?: UserConfigExport):
       lib: {
         entry: path.resolve(dirname, 'src/index.ts'),
         formats: ['es'],
-        
       },
       outDir: '../lib',
-      // rollupOptions: {
-      //   external: isExternal,
-      // },
+      rollupOptions: {
+        external: isExternal,
+      },
     },
     plugins: [dts()],
     ...override,

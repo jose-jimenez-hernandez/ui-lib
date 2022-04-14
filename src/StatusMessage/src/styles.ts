@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { Status } from '../../utils/types/StatusType';
+import { Status } from '@settle-ui/utils';
 import { StatusMessageProps } from './StatusMessageType';
 
 const useStyles = ({ className, status }: Partial<StatusMessageProps>) => {

@@ -3,7 +3,7 @@ import { Listbox, Transition } from '@headlessui/react';
 import { ChevronDownIcon,  SelectorIcon } from '@heroicons/react/solid';
 import { SelectProps } from './SelectType';
 import useStyles from './styles';
-import { Status } from '../../utils/types/StatusType';
+import { Status } from '@settle-ui/utils';
 import { StatusMessage } from '@settle-ui/status-message';
 
 const Select = ({

@@ -1,4 +1,4 @@
-import { Status } from '../../utils/types/StatusType';
+import { Status } from '@settle-ui/utils';
 import { StatusMessageProps } from './StatusMessageType';
 import useStyles from './styles';
 

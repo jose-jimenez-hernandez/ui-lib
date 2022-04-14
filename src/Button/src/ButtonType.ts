@@ -1,5 +1,5 @@
 import React, { ButtonHTMLAttributes } from 'react';
-import { SIZE } from '../../utils/types/SizeType';
+import { SIZE } from '@settle-ui/utils';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className: string;

@@ -4,7 +4,7 @@ import LinkTheme from './theme/TextTheme';
 import PrimaryTheme from './theme/PrimaryTheme';
 import SecondaryTheme from './theme/SecondaryTheme';
 import TertiaryTheme from './theme/TertiaryTheme';
-import { SIZE } from '../../utils/types/SizeType';
+import { SIZE } from '@settle-ui/utils';
 
 const createThemeFactory = ({ variant, ...props }: Partial<ButtonProps>) => {
   switch (variant) {

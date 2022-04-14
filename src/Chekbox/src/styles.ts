@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { Position } from '../../utils/types/Position';
+import { Position } from '@settle-ui/utils';
 import { ChekboxProps } from './ChekboxType';
 
 const useStyles = ({ className, disabled, position }: Partial<ChekboxProps>) => ({
