@@ -15,6 +15,15 @@ module.exports = {
   ],
   framework: '@storybook/react',
   core: {
-    builder: 'webpack5',
+    builder: 'storybook-builder-vite',
+  },
+  webpackFinal: async (config) => {
+    config.resolve.modules = [...(config.resolve.modules || []), path.resolve(__dirname, '../src')];
+    config.resolve.alias = {
+      ...config.resolve?.alias,
+      '@settle-ui': path.resolve(__dirname, '../lib/'),
+    };
+ 
+    return config;
   },
 };
