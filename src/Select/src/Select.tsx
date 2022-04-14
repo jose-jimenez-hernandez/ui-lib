@@ -1,11 +1,10 @@
 import { Fragment, useState } from 'react';
 import { Listbox, Transition } from '@headlessui/react';
-import { ChevronDownIcon, CheckIcon, SelectorIcon } from '@heroicons/react/solid';
+import { ChevronDownIcon,  SelectorIcon } from '@heroicons/react/solid';
 import { SelectProps } from './SelectType';
 import useStyles from './styles';
 import { Status } from '../../utils/types/StatusType';
-import { StatusMessage } from '../StatusMessage';
-import SelectOption from './SelectOption';
+import { StatusMessage } from '@settle-ui/status-message';
 
 const Select = ({
   label,

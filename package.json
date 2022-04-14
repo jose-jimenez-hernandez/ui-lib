@@ -1,6 +1,6 @@
 {
   "name": "testing-settle-ui-library",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "Settle React Components Library",
   "main": "lib/settle-ui.cjs.js",
   "license": "MIT",
@@ -85,6 +85,7 @@
     "build-storybook": "build-storybook -o docs-build",
     "tsc": "lerna run tsc",
     "postinstall": "yarn build",
+    "publish": "lerna publish",
     "update": "yarn upgrade --latest"
   },
   "babel": {
