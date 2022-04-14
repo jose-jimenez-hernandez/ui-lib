@@ -1,0 +1,18 @@
+{
+  "name": "@settle-ui/dropdown",
+  "version": "0.0.0",
+  "description": "dropdown description",
+  "main": "../lib/dropdown.es.js",
+  "module": "../lib/dropdown.es.js",
+  "scripts": {
+    "build": "vite build",
+    "build:watch": "vite build --watch",
+    "lint": "eslint ./src",
+    "tsc": "tsc"
+  },
+  "types": "./src/dropdown.d.ts",
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

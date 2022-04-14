@@ -1,5 +1,5 @@
 import React, { ButtonHTMLAttributes } from 'react';
-import { SIZE } from '../../core/enums/SizeEnum';
+import { SIZE } from '../../utils/types/SizeType';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className: string;

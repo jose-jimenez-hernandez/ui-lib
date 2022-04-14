@@ -1,0 +1,20 @@
+{
+  "name": "@settle-ui/breadcrumb",
+  "version": "0.0.0",
+  "description": "breadcrumb description",
+  "main": "../lib/breadcrumb.es.js",
+  "module": "../lib/breadcrumb.es.js",
+  "scripts": {
+    "build": "vite build",
+    "build:watch": "vite build --watch",
+    "lint": "eslint ./src",
+    "tsc": "tsc"
+  },
+  "types": "./src/breadcrumb.d.ts",
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

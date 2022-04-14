@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="flex"
+    >
+      <div
+        class="flex "
+      >
+        <input
+          class="ounded h-4 w-4 border cursor-pointer bg-center bg-contain  text-indigo-600 focus:outline focus:outline-offset-2 focus:outline-primary-500 border-gray-300 checked:bg-primary-500 checked:text-white checked:border-primary-500"
+          type="checkbox"
+        />
+      </div>
+      <div
+        class="ml-3 text-sm flex-auto grow-0"
+      >
+        <label
+          class="font-medium text-gray-700"
+        />
+        <p
+          class="text-gray-500"
+        />
+      </div>
+    </div>
+  </div>
+</body>
+`;

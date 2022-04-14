@@ -1,0 +1,17 @@
+{
+  "name": "@settle-ui/toggle",
+  "version": "0.0.0",
+  "description": "toggle description",
+  "main": "../lib/toggle.es.js",
+  "module": "../lib/toggle.es.js",
+  "scripts": {
+    "build": "vite build",
+    "build:watch": "vite build --watch",
+    "lint": "eslint ./src",
+    "tsc": "tsc"
+  },
+  "types": "./src/toggle.d.ts",
+  "dependencies": {
+    "@settle-ui/spinner": "^0.0.0"
+  }
+}

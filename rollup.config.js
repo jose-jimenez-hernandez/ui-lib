@@ -39,7 +39,6 @@ export default [
         },
       }),
     ],
-    external: ['react', 'react-dom'],
   },
   {
     input: packageJson.main,

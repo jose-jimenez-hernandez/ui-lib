@@ -4,7 +4,7 @@ import LinkTheme from './theme/TextTheme';
 import PrimaryTheme from './theme/PrimaryTheme';
 import SecondaryTheme from './theme/SecondaryTheme';
 import TertiaryTheme from './theme/TertiaryTheme';
-import { SIZE } from '../../core/enums/SizeEnum';
+import { SIZE } from '../../utils/types/SizeType';
 
 const createThemeFactory = ({ variant, ...props }: Partial<ButtonProps>) => {
   switch (variant) {

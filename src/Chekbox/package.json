@@ -1,0 +1,21 @@
+{
+  "name": "@settle-ui/checkbox",
+  "version": "0.0.0",
+  "description": "checkbox description",
+  "main": "../lib/checkbox.es.js",
+  "module": "../lib/checkbox.es.js",
+  "scripts": {
+    "build": "vite build",
+    "build:watch": "vite build --watch",
+    "lint": "eslint ./src",
+    "tsc": "tsc"
+  },
+  "types": "./src/checkbox.d.ts",
+  "dependencies": {
+    "@settle-ui/spinner": "^0.0.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

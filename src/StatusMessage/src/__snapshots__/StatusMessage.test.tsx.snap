@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<body>
+  <div>
+    <p
+      aria-live="polite"
+      class="flex mt-2 text-sm"
+    >
+      Default status message
+    </p>
+  </div>
+</body>
+`;

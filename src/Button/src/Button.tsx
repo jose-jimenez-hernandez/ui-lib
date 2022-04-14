@@ -1,5 +1,5 @@
-import { Spinner } from '../Spinner';
-import { SIZE } from '../../core/enums/SizeEnum';
+import { Spinner } from '@settle-ui/Spinner';
+import { SIZE } from '@settle-ui/utils/types/SizeType';
 import { ButtonProps, ButtonVariantType } from './ButtonType';
 import useStyles from './styles';
 

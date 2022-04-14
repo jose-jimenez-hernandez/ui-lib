@@ -1,0 +1,18 @@
+{
+  "name": "@settle-ui/status-message",
+  "version": "0.0.0",
+  "description": "status-message description",
+  "main": "../lib/status-message.es.js",
+  "module": "../lib/status-message.es.js",
+  "scripts": {
+    "build": "vite build",
+    "build:watch": "vite build --watch",
+    "lint": "eslint ./src",
+    "tsc": "tsc"
+  },
+  "types": "./src/status-message.d.ts",
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
