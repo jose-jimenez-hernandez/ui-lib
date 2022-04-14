@@ -5,7 +5,8 @@
   "main": "../lib/utils.es.js",
   "module": "../lib/utils.es.js",
   "scripts": {
-    "build": "vite build",
+    "build": "vite build && yarn build:copy", 
+"build:copy" : "node ../../scripts/copy-files.js",
     "build:watch": "vite build --watch",
     "lint": "eslint ./src",
     "tsc": "tsc"

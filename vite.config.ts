@@ -18,9 +18,10 @@ export function getBaseViteConfig(dirname: string, override?: UserConfigExport):
     build: {
       lib: {
         entry: path.resolve(dirname, 'src/index.ts'),
-        formats: ['es'],
+        formats: ['es', 'cjs'],
+        fileName: 'index',
       },
-      outDir: '../lib',
+      outDir: './lib/',
       rollupOptions: {
         external: isExternal,
       },
