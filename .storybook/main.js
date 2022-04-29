@@ -1,3 +1,6 @@
+const path = require('path');
+const { mergeConfig } = require('vite');
+
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
@@ -17,13 +20,12 @@ module.exports = {
   core: {
     builder: 'storybook-builder-vite',
   },
-  webpackFinal: async (config) => {
-    config.resolve.modules = [...(config.resolve.modules || []), path.resolve(__dirname, '../src')];
+  viteFinal: async (config) => {
     config.resolve.alias = {
-      ...config.resolve?.alias,
-      '@settle-ui': path.resolve(__dirname, '../lib/'),
+      ...config.resolve.alias,
+      '@settle-ui': path.resolve(__dirname, '../lib'),
     };
- 
+
     return config;
   },
 };

@@ -80,6 +80,7 @@
   "scripts": {
     "dev": "yarn storybook",
     "build": "lerna run build",
+    "build:main": "vite build",
     "build:watch": "lerna run build:watch",
     "lint": "lerna run lint",
     "test": "jest && yarn tsc",

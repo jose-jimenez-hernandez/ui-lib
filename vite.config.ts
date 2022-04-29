@@ -8,14 +8,19 @@ import { UserConfigExport } from 'vite';
 export function getBaseViteConfig(dirname: string, override?: UserConfigExport): UserConfigExport {
   const isExternal = (id: string) => !id.startsWith('.') && !path.isAbsolute(id);
 
+  const packageName = dirname.slice(dirname.lastIndexOf('/'));
+
   return {
     resolve: {
       alias: {
-        '@settle-ui': path.resolve(__dirname, './src/'),
+        '@settle-ui': path.resolve(__dirname, './lib/'),
       },
     },
     esbuild: {
       jsxInject: "import React from 'react'",
+    },
+    optimizeDeps: {
+      include: ['linked-dep'],
     },
     build: {
       lib: {
@@ -23,12 +28,17 @@ export function getBaseViteConfig(dirname: string, override?: UserConfigExport):
         formats: ['es', 'cjs'],
         fileName: 'index',
       },
-      outDir: './lib/',
+      outDir: '../../lib' + packageName,
       rollupOptions: {
         external: isExternal,
+      },
+      commonjsOptions: {
+        include: [/linked-dep/, /node_modules/],
       },
     },
     plugins: [react(), splitVendorChunkPlugin(), dts()],
     ...override,
   };
 }
+
+// export default defineConfig(getBaseViteConfig(__dirname));

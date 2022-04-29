@@ -14,12 +14,13 @@ async function prepend(file, string) {
 }
 
 async function createLibrary({ from, to }) {
-  await fse.copySync(from, to);
+  await fse.moveSync(from, to);
 }
 
 async function run() {
   try {
-    await createLibrary({ from: buildPath, to: publishPath });
+    console.log(buildPath);
+    // await createLibrary({ from: buildPath, to: publishPath });
   } catch (err) {
     console.error(err);
     process.exit(1);
