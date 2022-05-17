@@ -1,5 +1,5 @@
 import { Story } from '@storybook/react';
-import { Status } from '../@settle-ui/utils';
+import { Status } from '@settle-ui/utils';
 import StatusMessage from '../StatusMessage';
 import StatusMessageDoc from './StatusMessage.stories.mdx';
 

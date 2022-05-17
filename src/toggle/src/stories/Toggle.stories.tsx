@@ -1,7 +1,7 @@
 import { Story } from '@storybook/react';
 import Toggle from '../Toggle';
 import ToggleDoc from './Toggle.stories.mdx';
-import { SIZE } from '../@settle-ui/utils';
+import { SIZE } from '@settle-ui/utils';
 
 export default {
   title: 'Components/Toggle',

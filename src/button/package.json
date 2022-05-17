@@ -2,16 +2,28 @@
   "name": "@settle-ui/button",
   "version": "0.0.0",
   "description": "Button description",
-  "main": "../lib/button.es.js",
-  "module": "../lib/button.es.js",
+  "private": true,
+  "sideEffects": false,
+  "files": [
+    "package.json",
+    "lib"
+  ],
+"main": "./lib/index.cjs.js",
+  "module": "./lib/index.es.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/index.es.js",
+      "require": "./lib/index.cjs.js"
+    }
+  },
   "scripts": {
-    "build": "vite build && yarn build:copy",
+    "build": "vite build",
     "build:copy": "node ../../scripts/copy-files.js",
     "build:watch": "vite build --watch",
     "lint": "eslint ./src",
     "tsc": "tsc"
   },
-  "types": "./src/button.d.ts",
   "dependencies": {
     "@settle-ui/spinner": "^0.0.0"
   },
